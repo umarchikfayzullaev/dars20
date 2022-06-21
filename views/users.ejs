@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Supper App</title>
+  </head>
+  <body>
+    <h1>userlar ro'yhati</h1>
+
+    <form method="post" action="http://localhost:4001/user" enctype="multipart/form-data">
+      <input type="text" name="name">
+      <br>
+      <br>
+      <input type="file" name="photo" accept="image/*">
+      <br>
+      <br>
+      <button type="submit">Save</button>
+    </form>
+    
+    <ul>
+      <% for(let user of users) { %>
+        <li>
+          <h4><%= user.name %></h4>
+          <img src="<%= user.image %>" alt="user_photo" width="200">
+          <a class="del-btn" href="http://localhost:4001/user/<%= user.id  %>">Delete user</a>
+        </li>
+      <% } %>
+    </ul>
+  </body>
+</html>

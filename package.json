@@ -1,0 +1,26 @@
+{
+  "name": "server-site-rendering",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "nodeJs",
+    "ejs",
+    "html"
+  ],
+  "author": "Webstar IT Academy",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  },
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-fileupload": "^1.4.0",
+    "uuid": "^8.3.2"
+  }
+}
