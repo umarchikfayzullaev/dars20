@@ -8,6 +8,8 @@ const fs = require("fs")
 
 const uploadsDir = path.join(__dirname, "static", "files")
 
+const users = JSON.parse(fs.readFileSync(paht.join(__dirname, "data.txt")))
+
 const app = express()
 
 app.use(express.json())
